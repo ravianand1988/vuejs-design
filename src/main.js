@@ -3,8 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import SideBar from './components/UIComponents/SidebarPlugin'
+import BootstrapVue from 'bootstrap-vue'
+
+// asset imports
+import './assets/sass/sidebar-dashboard.scss'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false
+Vue.use(BootstrapVue)
+Vue.use(SideBar)
 
 /* eslint-disable no-new */
 new Vue({
